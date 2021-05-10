@@ -1,0 +1,22 @@
+name: scrumlab_flutter_qr_bar_scanner
+description: "A Plugin for reading/scanning QR & Bar codes using Google's Mobile Vision API."
+version: 2.0.0+nullSafety
+homepage: https://github.com/giulianojordao/scrumlab_flutter_qr_bar_scanner
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: br.com.scrumlab.flutter_qr_bar_scanner
+        pluginClass: FlutterQrBarScannerPlugin
+      ios:
+        pluginClass: FlutterQrBarScannerPlugin
+
+dependencies:
+  flutter:
+    sdk: flutter
+  native_device_orientation: ^1.0.0
